@@ -69,7 +69,7 @@ function CadastroUsuario() {
             <Grid item xs={6} alignItems="center">
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component='h3' align="center" className="textos2">Cadastrar</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component='h3' align="center" className="textos-cad">Cadastrar</Typography>
                         <TextField
                             value={user.nome}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
@@ -112,11 +112,11 @@ function CadastroUsuario() {
 
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none, btnCancelar'>
-                                <Button variant='contained' color='secondary'>
+                                <Button variant='contained' color='secondary' className="cancelar">
                                     Cancelar
                                 </Button>
                             </Link>
-                            <Button type="submit" variant='contained' color='primary'>
+                            <Button type="submit" variant='contained' color='primary' className="cadastrar">
                                 Cadastrar
                             </Button>
                         </Box> 

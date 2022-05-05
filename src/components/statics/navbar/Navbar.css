@@ -7,3 +7,13 @@
     text-decoration: none;
 }
 
+.nome{
+    color: #f08080 !important;
+    font-family: monospace !important;
+    font-size: xx-large;
+}
+.textos-nav{
+    color: #e99494 !important;
+    font-family: monospace !important;
+}
+

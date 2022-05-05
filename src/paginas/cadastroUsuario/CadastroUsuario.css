@@ -1,5 +1,5 @@
 .imagem2{
-    background-image: url(https://i.imgur.com/ueFumEZ.jpg);
+    background-image: url(https://i.imgur.com/yQ6M7Ey.gif);
     background-repeat: no-repeat; 
     width: 100vh; 
     min-height: 100vh; 
@@ -7,14 +7,28 @@
     background-position: center;
 }
 
-.textos2{
+.textos-cad{
     font-weight: bold !important;
+    color: #e99494 !important;
+    font-family: monospace !important;
 }
 
 .text-decorator-none{
     text-decoration: none;
 }
 
+.cadastrar{
+    font-family: monospace !important;
+    background-color: #f08080 !important;
+    border-radius: 50px !important;
+}
+
+.cancelar{
+    font-family: monospace !important;
+    background-color: #ee5d5d !important;
+    border-radius: 50px !important;
+}
+
 .btnCancelar{
-    margin-right: 20px !important;
+    margin-right: 30px !important;
 }

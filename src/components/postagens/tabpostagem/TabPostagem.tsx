@@ -13,10 +13,10 @@ function TabPostagem() {
   return (
     <>
       <TabContext value={value}>
-        <AppBar position="static">
+        <AppBar position="static" className='barra'>
           <Tabs centered indicatorColor="secondary" onChange={handleChange}>
-            <Tab label="Todas as postagens" value="1"/>
-            <Tab label="Sobre mim" value="2" />
+            <Tab label="Todas as postagens" value="1" className='titulo-barra' />
+            <Tab label="Sobre mim" value="2" className='titulo-barra' />
           </Tabs>
         </AppBar>
         <TabPanel value="1" >
@@ -26,7 +26,11 @@ function TabPostagem() {
         </TabPanel>
         <TabPanel value="2">
           <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre mim</Typography>
-          <Typography variant="body1" gutterBottom color="textPrimary" align="justify"> Sou a Marcela, tenho 23 anos e sou vegetariana há 5 anos. Motivada principalmente pelos impactos ambientais da produção de carne, mas também comovida pela causa animal, sem especismo e crueldades. Sou formada em gestão ambiental com o um projeto de formatura sobre as reduções do impacto ambiental e das mudanças climáticas de reduzir o consumo e, consequentemente, a produção de carne. Criei esse blog para trazer mais informações sobre esse assunto. Espero que gostem! </Typography>
+          <Typography variant="body1" gutterBottom color="textPrimary" align="justify"> Sou a Marcela, tenho 23 anos e sou vegetariana há 5 anos. 
+          Motivada principalmente pelos impactos ambientais da produção de carne, mas também comovida pela causa animal, 
+          sem especismo e crueldades. Sou formada em gestão ambiental com o um projeto de formatura sobre as reduções do 
+          impacto ambiental e das mudanças climáticas de reduzir o consumo e, consequentemente, a produção de carne. 
+          Criei esse blog para trazer mais informações sobre esse assunto. Espero que gostem! </Typography>
         </TabPanel>
       </TabContext>
     </>

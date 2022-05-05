@@ -1,18 +1,27 @@
+.footer{
+    position: absolute !important;
+    flex-direction: row-reverse;
+    margin-bottom: 0px;
+}
+
 .box1{
-    background-color: #3F51B5; 
+    background-color: #e99494; 
     height: 120px;
 }
 
 .box2{
-    background-color: #303F9F; 
+    background-color: #f08080; 
     height: 60px;
+
 }
 
 .redes{
-    font-size: 60px !important;
+    font-size: 45px !important;
     color: white;
+    margin: 8px;
 }
 
-.textos{
+.textos-ft{
     color: white;
+    font-family: monospace !important;
 }

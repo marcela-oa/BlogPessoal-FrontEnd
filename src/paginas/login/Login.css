@@ -1,9 +1,11 @@
-.textos1{
+.textos-log{
     font-weight: bold !important;
+    color: #f08080 !important;
+    font-family: monospace !important;
 }
 
 .imagem{
-    background-image: url(https://i.imgur.com/oNFVLNa.jpg);
+    background-image: url(https://i.imgur.com/SuRlbKC.gif);
     background-repeat: no-repeat; 
     width: 100vh; 
     min-height: 100vh; 
@@ -13,4 +15,10 @@
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.botao-log{
+    font-family: monospace !important;
+    background-color: #f08080 !important;
+    border-radius: 50px !important;
 }
