@@ -79,23 +79,32 @@ function CadastroPost() {
         e.preventDefault()
 
         if (id !== undefined) {
-            put(`/postagens`, postagem, setPostagem, {
-                headers: {
-                    'Authorization': token
-                }
-            })
-            alert('Postagem atualizada com sucesso');
+            try {
+                await put(`/postagens`, postagem, setPostagem, {
+                    headers: {
+                        'Authorization': token
+                    }
+                })
+                alert('Postagem atualizada com sucesso');
+            } catch (error) {
+                alert("Erro ao atualizar, verifique os campos")
+            }
+
         } else {
-            post(`/postagens`, postagem, setPostagem, {
-                headers: {
-                    'Authorization': token
-                }
-            })
-            alert('Postagem cadastrada com sucesso');
+            try {
+                await post(`/postagens`, postagem, setPostagem, {
+                    headers: {
+                        'Authorization': token
+                    }
+                })
+                alert('Postagem cadastrada com sucesso');
+            } catch (error) {
+                alert("Erro ao cadastrar, verifique os campos")
+            }
         }
         back()
-
     }
+
 
     function back() {
         history('/postagens')

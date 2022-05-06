@@ -1,10 +1,10 @@
 .titulo-barra{
     font-weight: bolder !important;
     font-size: larger !important;
-    color: #f08080 !important;
+    color: white !important;
     font-family: monospace !important;
  }
 
  .barra{
-    background-color: white !important;
+    background-color: #195a39 !important;
  }

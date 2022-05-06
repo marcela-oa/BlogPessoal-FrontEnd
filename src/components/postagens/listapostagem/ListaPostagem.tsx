@@ -35,35 +35,35 @@ function ListaPostagem() {
   return (
     <>
     {postagens.map(postagem =>(
-      <Box m={2} >
-        <Card variant="outlined">
+      <Box m={2}>
+        <Card variant="outlined" className='card-post'>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textSecondary" gutterBottom className='textos-post'>
               Postagens
             </Typography>
-            <Typography variant="h5" component="h2">
-              Título
+            <Typography variant="h5" component="h2" className='titulo-post'>
+              {postagem.titulo}
             </Typography>
-            <Typography variant="body2" component="p">
-              Texto da Postagem
+            <Typography variant="body2" component="p" className='textos-post'>
+              {postagem.texto}
             </Typography>
-            <Typography variant="body2" component="p">
-              Tema
+            <Typography variant="body2" component="p" className='textos-post'>
+              {postagem.tema?.descricao}
             </Typography>
           </CardContent>
           <CardActions>
-            <Box display="flex" justifyContent="center" mb={1.5}>
+            <Box display="flex" justifyContent="center" mb={1.5} >
 
               <Link to={`/formularioPostagem/${postagem.id}`} className="text-decorator-none" >
                 <Box mx={1}>
-                  <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                  <Button variant="contained" className="marginLeft, btn-atual" size='small' color="primary">
                     atualizar
                   </Button>
                 </Box>
               </Link>
               <Link to={`/deletarPostagem/${postagem.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" size='small' color="secondary">
+                  <Button variant="contained" size='small' color="secondary" className='btn-del'>
                     deletar
                   </Button>
                 </Box>

@@ -1,3 +1,35 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.descricao-tema{
+    font-family: monospace !important;
+    font-weight: bold !important;
+    color: #195a39 !important;
+}
+
+.btn-atual-tema{
+    font-family: monospace !important;
+    border-radius: 50px !important;
+    background-color: #9ec5b5 !important;
+    font-weight: bold !important;
+
+}
+
+.btn-del-tema{
+    font-family: monospace !important;
+    border-radius: 50px !important;
+    background-color: #f08080 !important;
+    font-weight: bold !important;
+
+}
+
+.card-tema{
+    border-radius: 50px !important;
+    box-shadow: #195a39 0.1em 0.1em 0.2em !important;
+
+}
+
+.fundo{
+    background-color: #9ec5b5 !important;
+}

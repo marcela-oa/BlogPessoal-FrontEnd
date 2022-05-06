@@ -1,3 +1,44 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.textos-post{
+    font-family: monospace !important;
+    color: black !important;
+}
+
+.titulo-post{
+    font-family: monospace !important;
+    font-weight: bold !important;
+    color: #195a39 !important;
+
+
+
+}
+
+.btn-atual{
+    font-family: monospace !important;
+    border-radius: 50px !important;
+    background-color: #9ec5b5 !important;
+    font-weight: bold !important;
+
+}
+
+.btn-del{
+    font-family: monospace !important;
+    border-radius: 50px !important;
+    background-color: #f08080 !important;
+    font-weight: bold !important;
+
+}
+
+.card-post{
+    border-radius: 50px !important;
+    box-shadow: #195a39 0.1em 0.1em 0.2em !important;
+
+
+}
+
+.fundo{
+    background-color: #9ec5b5 !important;
+}
