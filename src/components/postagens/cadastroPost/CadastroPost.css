@@ -1,3 +1,21 @@
 .topo{
-    margin-top: 20px;
+    margin-top: 10px;
+    
+}
+
+.titulo-cad-post{
+    font-family: monospace !important;
+    color: #f08080 !important; 
+    text-shadow: #9ec5b5 0.1em 0.1em 0.2em !important;
+    font-weight: bold !important; 
+
+}
+.btn-cad-post{
+    font-family: monospace !important;
+    background-color: #195a39 !important;
+    border-radius: 50px !important;
+    color: white !important;
+    font-weight: bold !important;
+    margin-top: 20px !important;
+    margin-left: 125px !important;
 }

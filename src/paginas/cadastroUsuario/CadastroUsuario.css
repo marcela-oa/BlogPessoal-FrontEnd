@@ -11,6 +11,8 @@
     font-weight: bold !important;
     color: #e99494 !important;
     font-family: monospace !important;
+    text-shadow: #9ec5b5 0.1em 0.1em 0.2em !important;
+
 }
 
 .text-decorator-none{
@@ -25,7 +27,7 @@
 
 .cancelar{
     font-family: monospace !important;
-    background-color: #ee5d5d !important;
+    background-color: #9ec5b5 !important;
     border-radius: 50px !important;
 }
 

@@ -2,6 +2,8 @@
     font-weight: bold !important;
     color: #f08080 !important;
     font-family: monospace !important;
+    text-shadow: #9ec5b5 0.1em 0.1em 0.2em !important;
+
 }
 
 .imagem{
@@ -19,6 +21,7 @@
 
 .botao-log{
     font-family: monospace !important;
-    background-color: #f08080 !important;
+    background-color: #9ec5b5 !important;
     border-radius: 50px !important;
 }
+

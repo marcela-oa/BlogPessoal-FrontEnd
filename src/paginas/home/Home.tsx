@@ -4,12 +4,14 @@ import './Home.css';
 import TabPostagem from "../../components/postagens/tabpostagem/TabPostagem";
 import ModalPostagem from "../../components/postagens/modalPostagem/ModalPostagem";
 import { Link, useNavigate } from "react-router-dom";
-import useLocalStorage from "react-use-localstorage";
+import { useSelector } from "react-redux";
+import { TokenState } from "../../store/tokens/tokensReducer";
 
 function Home(){
 
     let history = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+
+    const token = useSelector<TokenState, TokenState['tokens']>((state) => state.tokens);
     
     useEffect(() => {
       if (token == "") {
@@ -25,7 +27,7 @@ function Home(){
                 <Grid alignItems="center" item xs={6} className='item' justifyContent="center" >
                     <Box paddingX={20} justifyContent='center'>
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="titulo-home">Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo-home">expresse aqui os seus pensamentos e opiniões!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo-home">Vamos falar sobre vegetarianismo e veganismo com consciência e respeito à todes ❤</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>

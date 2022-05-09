@@ -2,6 +2,7 @@
     background-image: url(https://i.imgur.com/YGRnlck.jpg);
     height: 150vh;
     vertical-align: middle;
+    border-top: 0px !important;
 }
 
 .item{
@@ -13,6 +14,8 @@
     color: white !important; 
     text-shadow: #195a39 0.1em 0.1em 0.2em !important;
     font-weight: bold !important; 
+    padding-bottom: 20px !important;
+
 }
 
 .botao-home{

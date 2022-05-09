@@ -11,15 +11,12 @@
     font-family: monospace !important;
     font-weight: bold !important;
     color: #195a39 !important;
-
-
-
 }
 
 .btn-atual{
     font-family: monospace !important;
     border-radius: 50px !important;
-    background-color: #9ec5b5 !important;
+    background-color: #195a39 !important;
     font-weight: bold !important;
 
 }

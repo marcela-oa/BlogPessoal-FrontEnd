@@ -8,3 +8,13 @@
  .barra{
     background-color: #195a39 !important;
  }
+
+ .sobre-mim{
+   padding-left: 70px !important;
+   padding-right: 70px !important;
+   padding-bottom: 50px !important;
+   font-family: monospace !important;
+   color: white !important; 
+   text-shadow: #f08080 0.1em 0.1em 0.2em !important;
+   font-weight: bold !important; 
+}
