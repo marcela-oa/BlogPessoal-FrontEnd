@@ -1,0 +1,26 @@
+.card-tema-del{
+    border-radius: 50px !important;
+    box-shadow: #195a39 0.1em 0.1em 0.2em !important;
+}
+
+.btn-sim{
+    font-family: monospace !important;
+    border-radius: 50px !important;
+    background-color: #f08080 !important;
+    font-weight: bold !important;
+}
+
+.btn-nao{
+    font-family: monospace !important;
+    border-radius: 50px !important;
+    background-color: #195a39 !important;
+    font-weight: bold !important;
+}
+
+.texto-tema-del{
+    font-family: monospace !important;
+    font-weight: bold !important;
+    color: #195a39 !important;
+    font-size: 20px !important;
+
+}

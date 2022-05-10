@@ -2,6 +2,7 @@ import { Box, Button, Card, CardActions, CardContent, Typography } from "@materi
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import Postagem from "../../../models/Postagem";
 import { buscaId, deleteId } from "../../../service/Service";
 import { TokenState } from "../../../store/tokens/tokensReducer";
@@ -15,7 +16,15 @@ function DeletarPostagem() {
 
   useEffect(() => {
       if (token == "") {
-          alert("Você precisa estar logado")
+        toast.error('Você precisa estar logado', {
+          position: "top-right",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+      });
           history("/login")
   
       }
@@ -42,7 +51,15 @@ function DeletarPostagem() {
               'Authorization': token
             }
           });
-          alert('Postagem deletada com sucesso');
+          toast.success('Postagem deletada com sucesso', {
+            position: "top-right",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
         }
       
         function nao() {
@@ -51,13 +68,13 @@ function DeletarPostagem() {
 return (
   <>
     <Box m={2}>
-      <Card variant="outlined" >
+      <Card variant="outlined" className="card-post-del">
         <CardContent>
           <Box justifyContent="center">
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textSecondary" gutterBottom className="texto-post-del">
               Deseja deletar a Postagem:
             </Typography>
-            <Typography color="textSecondary" >
+            <Typography color="textSecondary" className="texto-post-del">
             {post?.titulo}
             </Typography>
           </Box>
@@ -66,12 +83,12 @@ return (
         <CardActions>
           <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
             <Box mx={2}>
-            <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+            <Button onClick={sim} variant="contained" className="btn-sim-post" size='large' color="primary">
               Sim
             </Button>
             </Box>
             <Box>
-            <Button  onClick={nao} variant="contained" size='large' color="secondary">
+            <Button  onClick={nao} variant="contained" className="btn-nao-post" size='large' color="secondary">
               Não
             </Button>
             </Box>

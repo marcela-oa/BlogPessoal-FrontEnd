@@ -1,0 +1,25 @@
+.card-post-del{
+    border-radius: 50px !important;
+    box-shadow: #195a39 0.1em 0.1em 0.2em !important;
+}
+
+.btn-sim-post{
+    font-family: monospace !important;
+    border-radius: 50px !important;
+    background-color: #f08080 !important;
+    font-weight: bold !important;
+}
+
+.btn-nao-post{
+    font-family: monospace !important;
+    border-radius: 50px !important;
+    background-color: #195a39 !important;
+    font-weight: bold !important;
+}
+
+.texto-post-del{
+    font-family: monospace !important;
+    font-weight: bold !important;
+    color: #195a39 !important;
+    font-size: 20px !important;
+}

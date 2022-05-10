@@ -6,6 +6,7 @@ import UsuarioLogin from '../../models/UsuarioLogin';
 import './Login.css';
 import { useDispatch } from "react-redux";
 import { addToken } from "../../store/tokens/actions";
+import { toast } from "react-toastify";
 
 function Login() {
 
@@ -42,9 +43,25 @@ function Login() {
         e.preventDefault();
         try {
             await login('/usuarios/logar', usuarioLogin, setToken);
-            alert("Usuário logade com sucesso!");
+            toast.success('Usuário logado com sucesso!', {
+                position: "top-right",
+                autoClose: 4000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         } catch (error) {
-            alert("Dados inválidos. Erro ao logar!");
+            toast.error('Dados inválidos, erro ao logar!', {
+                position: "top-right",
+                autoClose: 4000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         }
     }
 
