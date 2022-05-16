@@ -22,10 +22,10 @@ function Footer() {
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
                     
-                    <a href="https://github.com/marcela-oa" target="_blank">
+                    <a href="" target="_blank">
                         <InstagramIcon  className="redes" />
                     </a>
-                    <a href="https://www.facebook.com/generationbrasil" target="_blank">
+                    <a href="https://github.com/marcela-oa" target="_blank">
                         <GitHubIcon className="redes" />
                     </a>
                     <a href="https://www.linkedin.com/in/marcela-oliveira-2056551b7/" target="_blank">
